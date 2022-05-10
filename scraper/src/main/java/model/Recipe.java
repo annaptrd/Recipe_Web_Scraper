@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Recipe {
@@ -11,15 +12,28 @@ public class Recipe {
     public Difficulty difficulty = new Difficulty();
     public Category category = new Category();
     public Scraper scraper = new Scraper();
+    public String uri;
     public String title;
     public String description;
     public int preparation_time ;
     public int cooking_time ;
     public String servings;
     public int number_of_ingredients;
+    public Date scraped_at;
+    public String writer;
+    public String comments;
 
+    public Recipe(){
+
+    }
+    public Recipe(String description){
+        this.description = description;
+    }
     public void print() {
         System.out.println("Title             : " + title);
+        System.out.println("URI               : " + uri);
+        System.out.println("Writer            : " + writer);
+        System.out.println("Scraped at        : " + scraped_at);
         System.out.println("Category          : " +  category);
         System.out.println("Scraper           : " +  scraper.description);
         System.out.println("Description       : " +  description);
@@ -42,13 +56,13 @@ public class Recipe {
             List<Ingredient> ingredients = group.ingredients;
 
             for (int j=0;j<ingredients.size();j++) {
-                System.out.println(" - Ingredient " + (j+1) + ": " + ingredients.get(j).text);
+                System.out.println(" - Ingredient " + (j+1) + ": " + ingredients.get(j).description);
             }
         }
 
-        System.out.println("Calories      : " + nutritionInfo.kcal + " gr");
+        System.out.println("Calories      : " + nutritionInfo.kcal);
         System.out.println("Protein       : " + nutritionInfo.protein + " gr");
-        System.out.println("Fats          : " + nutritionInfo.fats + " gr");
+        System.out.println("Fats          : " + nutritionInfo.fat + " gr");
         System.out.println("Carbohydrates : " + nutritionInfo.carbohydrates + " gr");
         System.out.println("Saturated Fat : " + nutritionInfo.saturated_fat + " gr");
         System.out.println("Sugars        : " + nutritionInfo.sugars + " gr");

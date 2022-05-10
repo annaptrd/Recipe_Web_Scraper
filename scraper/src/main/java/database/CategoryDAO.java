@@ -14,7 +14,8 @@ public class CategoryDAO {
     private Database database;
 
     private static final String SQL_INSERT = "INSERT INTO category(`description`) VALUES (?)";
-    private static final String SQL_FIND_BY_ID = "SELECT * from category where id = ?";
+    private static final String SQL_FIND_BY_ID = "SELECT * from category where ingredient_group_id = ?";
+    private static final String SQL_FIND_BY_DESCRIPTION = "SELECT * from category where description = ?";
     private static final String SQL_LIST = "SELECT * from category order by description";
 
     public CategoryDAO(Database database) {
@@ -61,6 +62,35 @@ public class CategoryDAO {
         }
     }
 
+    public Category find(String description) throws SQLException {
+        try (PreparedStatement preparedStatement = database.getConnection().prepareStatement(SQL_FIND_BY_DESCRIPTION)) {
+            preparedStatement.setString(1, description);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            if (resultSet.next() == false ) {
+                return null;
+            }
+
+            Category category = new Category();
+
+            category.id = resultSet.getLong("id");
+            category.description = resultSet.getString("description");
+            return category;
+        }
+    }
+
+    public Category findOrInsert(String description) throws SQLException {
+        Category cat = find(description);
+
+        if (cat == null) {
+            cat = new Category(description);
+            insert(cat);
+        }
+
+        return cat;
+    }
+
     public List<Category> list() throws SQLException {
         try (PreparedStatement preparedStatement = database.getConnection().prepareStatement(SQL_LIST)) {
 
@@ -82,7 +112,7 @@ public class CategoryDAO {
 //
 
 
-//    public void delete(Long id) {
+//    public void delete(Long ingredient_group_id) {
 //
 //    }
 //
