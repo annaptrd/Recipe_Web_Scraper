@@ -140,6 +140,9 @@ public class BbcGoodFoodScraper extends BaseScraper {
         recipe.title = cleanUpTitle(doc.title());
         recipe.scraper.description = this.NAME;
 
+        // TODO:
+        recipe.photo_url = "to be determined";
+
         // description + steps
         Elements directions = doc.select(".grouped-list");
         recipe.description = doc.select("p").get(0).text();

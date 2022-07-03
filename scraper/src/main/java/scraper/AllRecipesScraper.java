@@ -47,6 +47,9 @@ public class AllRecipesScraper extends BaseScraper {
 
         recipe.scraper.description = this.NAME;
 
+        // TODO:
+        recipe.photo_url = "to be determined";
+
 
         Elements directions = doc.select(".instructions-section-item");
 

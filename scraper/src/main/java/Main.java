@@ -16,6 +16,15 @@ import java.util.TreeMap;
 // #3 implement scrapers
 
 public class Main {
+    private static boolean validate(Recipe r) {
+        // TODO:
+        if (r.nutritionInfo.kcal <= 0) {
+            return false;
+        }
+
+        return true;
+    }
+
     public static void main(String [] args) {
         ScraperInterface allRecipesScraper = new AllRecipesScraper();
         ScraperInterface bbcGoodFoodScraper = new BbcGoodFoodScraper();
@@ -53,17 +62,21 @@ public class Main {
 
 //                    r.print();
 
-                    db.newTransaction();
+                    if (validate(r) == true) {
+                        db.newTransaction();
 
-                    try {
-                        repository.insert(r);
+                        try {
+                            repository.insert(r);
 
-                        db.commit();
-                        counter++;
-                    } catch (Exception ex ) {
-                        db.rollback();
-                        System.out.println("[ *** Warning *** ] Recipe could not be inserted: " + ex.getMessage());
-                        failed++;
+                            db.commit();
+                            counter++;
+                        } catch (Exception ex) {
+                            db.rollback();
+                            System.out.println("[ *** Warning *** ] Recipe could not be inserted: " + ex.getMessage());
+                            failed++;
+                        }
+                    } else {
+                        System.out.println("[ *** Warning *** ] Recipe: " + r.uri + " was skipped. Validation failed.");
                     }
                 }
             }

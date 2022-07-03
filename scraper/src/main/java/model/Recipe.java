@@ -13,6 +13,7 @@ public class Recipe {
     public Category category = new Category();
     public Scraper scraper = new Scraper();
     public String uri;
+    public String photo_url;
     public String title;
     public String description;
     public int preparation_time ;
@@ -32,6 +33,7 @@ public class Recipe {
     public void print() {
         System.out.println("Title             : " + title);
         System.out.println("URI               : " + uri);
+        System.out.println("Photo URL         : " + photo_url);
         System.out.println("Writer            : " + writer);
         System.out.println("Scraped at        : " + scraped_at);
         System.out.println("Category          : " +  category);

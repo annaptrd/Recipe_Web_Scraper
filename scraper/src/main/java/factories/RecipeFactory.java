@@ -1,7 +1,8 @@
 package factories;
 
-import model.*;
-import org.apache.commons.lang3.builder.Diff;
+import model.Difficulty;
+import model.IngredientGroup;
+import model.Recipe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,6 +43,7 @@ public class RecipeFactory extends BaseFactory {
         Recipe r = new Recipe(faker.lorem().sentence());
 
         r.uri = faker.internet().url();
+        r.photo_url = faker.internet().url();
         r.title = faker.food().dish();
         r.description = faker.lorem().paragraph();
         r.preparation_time = faker.number().numberBetween(10, 60);

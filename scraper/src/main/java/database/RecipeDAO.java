@@ -2,7 +2,6 @@ package database;
 
 import model.Difficulty;
 import model.Recipe;
-import org.apache.commons.lang3.builder.Diff;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,7 +14,7 @@ public class RecipeDAO {
 
     private Database database;
 
-    private static final String SQL_INSERT = "INSERT INTO recipe(`uri`,`title`,`description`,`preparation_time`,`cooking_time`,`servings`,`scraped_at`,`writer`,`difficulty_id`,`scraper_id`,`nutrition_info_id`,`number_of_ingredients`,`category_id`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    private static final String SQL_INSERT = "INSERT INTO recipe(`uri`,`photo_url`,`title`,`description`,`preparation_time`,`cooking_time`,`servings`,`scraped_at`,`writer`,`difficulty_id`,`scraper_id`,`nutrition_info_id`,`number_of_ingredients`,`category_id`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
     private static final String SQL_FIND_BY_ID = "SELECT * from recipe where ingredient_group_id = ?";
     private static final String SQL_LIST = "SELECT * from recipe order by title";
 
@@ -26,18 +25,19 @@ public class RecipeDAO {
     public boolean insert(Recipe obj) throws SQLException {
         try (PreparedStatement preparedStatement = database.getConnection().prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS)) {
             preparedStatement.setString(1, obj.uri);
-            preparedStatement.setString(2, obj.title);
-            preparedStatement.setString(3, obj.description);
-            preparedStatement.setInt(4, obj.preparation_time);
-            preparedStatement.setInt(5, obj.cooking_time);
-            preparedStatement.setString(6, obj.servings);
-            preparedStatement.setDate(7, new java.sql.Date(obj.scraped_at.getTime()));
-            preparedStatement.setString(8, obj.writer);
-            preparedStatement.setLong(9, obj.difficulty.id);
-            preparedStatement.setLong(10, obj.scraper.id);
-            preparedStatement.setLong(11, obj.nutritionInfo.id);
-            preparedStatement.setInt(12, obj.number_of_ingredients);
-            preparedStatement.setLong(13, obj.category.id);
+            preparedStatement.setString(2, obj.photo_url);
+            preparedStatement.setString(3, obj.title);
+            preparedStatement.setString(4, obj.description);
+            preparedStatement.setInt(5, obj.preparation_time);
+            preparedStatement.setInt(6, obj.cooking_time);
+            preparedStatement.setString(7, obj.servings);
+            preparedStatement.setDate(8, new java.sql.Date(obj.scraped_at.getTime()));
+            preparedStatement.setString(9, obj.writer);
+            preparedStatement.setLong(10, obj.difficulty.id);
+            preparedStatement.setLong(11, obj.scraper.id);
+            preparedStatement.setLong(12, obj.nutritionInfo.id);
+            preparedStatement.setInt(13, obj.number_of_ingredients);
+            preparedStatement.setLong(14, obj.category.id);
 
             int i = preparedStatement.executeUpdate();
 
@@ -76,6 +76,7 @@ public class RecipeDAO {
             Recipe recipe = new Recipe();
 
             recipe.id = resultSet.getLong("id");
+            recipe.photo_url = resultSet.getString("photo_url");
             recipe.description = resultSet.getString("description");
             recipe.title = resultSet.getString("title");
             recipe.uri = resultSet.getString("uri");
@@ -106,6 +107,7 @@ public class RecipeDAO {
                 Recipe obj = new Recipe();
 
                 obj.id = resultSet.getLong("id");
+                obj.photo_url = resultSet.getString("photo_url");
                 obj.description = resultSet.getString("description");
                 obj.title = resultSet.getString("title");
                 obj.uri = resultSet.getString("uri");
