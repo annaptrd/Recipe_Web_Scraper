@@ -1,0 +1,2 @@
+2022-05-01 11:42:49 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: crawler_python)
+2022-05-01 11:42:49 [scrapy.utils.log] INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.8.0 (default, Dec  9 2021, 17:53:27) - [GCC 8.4.0], pyOpenSSL 22.0.0 (OpenSSL 3.0.2 15 Mar 2022), cryptography 37.0.1, Platform Linux-4.15.0-175-generic-x86_64-with-glibc2.27

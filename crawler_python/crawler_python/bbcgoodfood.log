@@ -1,0 +1,412 @@
+2022-05-01 11:44:17 [scrapy.utils.log] INFO: Scrapy 2.6.1 started (bot: crawler_python)
+2022-05-01 11:44:17 [scrapy.utils.log] INFO: Versions: lxml 4.8.0.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 22.4.0, Python 3.8.0 (default, Dec  9 2021, 17:53:27) - [GCC 8.4.0], pyOpenSSL 22.0.0 (OpenSSL 3.0.2 15 Mar 2022), cryptography 37.0.1, Platform Linux-4.15.0-175-generic-x86_64-with-glibc2.27
+2022-05-01 11:44:17 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawler_python',
+ 'LOG_FILE': 'bbcgoodfood.log',
+ 'NEWSPIDER_MODULE': 'crawler_python.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['crawler_python.spiders']}
+2022-05-01 11:44:17 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2022-05-01 11:44:17 [scrapy.extensions.telnet] INFO: Telnet Password: 9c4a70258968a565
+2022-05-01 11:44:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2022-05-01 11:44:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-05-01 11:44:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-05-01 11:44:18 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-05-01 11:44:18 [scrapy.core.engine] INFO: Spider opened
+2022-05-01 11:44:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-05-01 11:44:18 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-05-01 11:44:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/robots.txt> (referer: None)
+2022-05-01 11:44:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes> (referer: None)
+2022-05-01 11:44:18 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.bbcgoodfood.com/recipes#search-popup> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2022-05-01 11:44:18 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.buysubscriptions.com': <GET https://www.buysubscriptions.com/print/bbc-good-food-magazine-subscription?promo=GFBSEG20&utm_medium=brandsite&utm_source=bbcgoodfood.com&utm_campaign=gf-fixed-evergreen-brandsite_gfbseg20&utm_content=main-menu&style=brand>
+2022-05-01 11:44:18 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.immediate.co.uk': <GET https://www.immediate.co.uk/terms-and-conditions/>
+2022-05-01 11:44:18 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.facebook.com': <GET https://www.facebook.com/BBCGoodFood>
+2022-05-01 11:44:18 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'twitter.com': <GET https://twitter.com/@bbcgoodfood>
+2022-05-01 11:44:18 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.instagram.com': <GET https://www.instagram.com/bbcgoodfood>
+2022-05-01 11:44:18 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.youtube.com': <GET https://www.youtube.com/channel/UCl4i6QsatTho9QJW50GbLAA>
+2022-05-01 11:44:18 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'policies.immediate.co.uk': <GET https://policies.immediate.co.uk/privacy>
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes#main-navigation-popup> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/vegan-curry-recipes> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/vegan-baking-recipes> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/category/all-vegan> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.pinterest.com': <GET http://www.pinterest.com/pin/create/button/?url=https://www.bbcgoodfood.com/recipes/collection/vegan-curry-recipes&media=https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-513500_11-269ff22.jpg&description=Vegan%20curry%20recipes>
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/roast-timer> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/conversion-guides> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/vegetarian-dinner-recipes> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/quick-veggie-recipes> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/category/all-vegetarian> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/healthy-dinner-recipes> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/cookery> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/whole-foods-recipes> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/two-ingredient-cocktail-recipes> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/glossary> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com:443/robots.txt> (referer: None)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/category/all-healthy> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/coconut-curry-noodle-bowl> (referer: https://www.bbcgoodfood.com/recipes/collection/vegan-curry-recipes)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/seasonal-calendar> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/sweet-potato-coconut-curry> (referer: https://www.bbcgoodfood.com/recipes/collection/vegan-curry-recipes)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/roast-aubergine-coconut-curry> (referer: https://www.bbcgoodfood.com/recipes/collection/vegan-curry-recipes)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/contact-us> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/spinach-chickpea-curry> (referer: https://www.bbcgoodfood.com/recipes/collection/vegan-curry-recipes)
+2022-05-01 11:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/about-bbc-good-food> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/gluten-free-lunch-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/gluten-free-breakfast-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/eat-athlete-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.pinterest.co.uk': <GET https://www.pinterest.co.uk/bbcgoodfood/>
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/category/all-healthy?page=2> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/gluten-free-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com:443> (referer: https://www.bbcgoodfood.com/recipes/collection/vegan-curry-recipes)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/easy-healthy-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/dopamine-diet-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/diabetes-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.amazon.co.uk': <GET https://www.amazon.co.uk/s?i=stripbooks&rh=p_27%3AGood+Food+Guides&s=relevancerank&text=Good+Food+Guides&ref=dp_byline_sr_book_1&tag=bbc00-21&ascsubtag=bbcgoodfood-720202>
+2022-05-01 11:44:21 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'mycookbooks.bbcgoodfood.com': <GET https://mycookbooks.bbcgoodfood.com/?gclid=CjwKCAjwt8uGBhBAEiwAayu_9T7c5ljYs7U0G-EmQZrrCqGReyQU6GKfFtA8jVnsPf9qqFQgU3VkGBoCBD0QAvD_BwE>
+2022-05-01 11:44:21 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.futurelearn.com': <GET https://www.futurelearn.com/partners/bbc-good-food>
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/feed/atom> (referer: https://www.bbcgoodfood.com/recipes)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/dairy-free-breakfast-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/dairy-free-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/cholesterol-friendly-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/dairy-free-lunch-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/dairy-free-snack-recipes> (referer: https://www.bbcgoodfood.com/recipes/category/all-healthy)
+2022-05-01 11:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/vegan-curry-recipes?page=2> (referer: https://www.bbcgoodfood.com/recipes/collection/vegan-curry-recipes)
+2022-05-01 11:44:22 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.beer52.com': <GET https://www.beer52.com/gf2018a1?gclid=a5a993f1-20de-42c1-b34f-0440b35ea904&utm_source=affiliatefuture&affc=a5a993f1-20de-42c1-b34f-0440b35ea904>
+2022-05-01 11:44:22 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.bbcgoodfood.com:443/auth/register>
+2022-05-01 11:44:22 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.bbcgoodfood.com:443/auth/login>
+2022-05-01 11:44:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/glossary/parsnip-glossary> (referer: https://www.bbcgoodfood.com/seasonal-calendar)
+2022-05-01 11:44:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/glossary/peach-glossary> (referer: https://www.bbcgoodfood.com/seasonal-calendar)
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/miriamnice> (referer: https://www.bbcgoodfood.com/recipes/sweet-potato-coconut-curry)
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/helensalter> (referer: https://www.bbcgoodfood.com/about-bbc-good-food)
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/glossary/clementine-glossary> (referer: https://www.bbcgoodfood.com/seasonal-calendar)
+2022-05-01 11:44:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/user-settings> from <GET https://www.bbcgoodfood.com:443/user-settings/#emails>
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/samuelgoldsmith> (referer: https://www.bbcgoodfood.com/about-bbc-good-food)
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com:443/contact-us> (referer: https://www.bbcgoodfood.com)
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com:443/about-bbc-good-food> (referer: https://www.bbcgoodfood.com)
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/cant-believe-podcast> (referer: https://www.bbcgoodfood.com)
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/apple-pear-cherry-compote> (referer: https://www.bbcgoodfood.com/recipes/collection/diabetes-recipes)
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/smoothie-cubes> (referer: https://www.bbcgoodfood.com/recipes/collection/dairy-free-breakfast-recipes)
+2022-05-01 11:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com:443/feed/atom> (referer: https://www.bbcgoodfood.com)
+2022-05-01 11:44:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/spicy-fry-rice> (referer: https://www.bbcgoodfood.com/recipes/collection/dairy-free-breakfast-recipes)
+2022-05-01 11:44:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/baked-eggs-ham-spinach> (referer: https://www.bbcgoodfood.com/recipes/collection/dairy-free-breakfast-recipes)
+2022-05-01 11:44:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/emilyburg> (referer: https://www.bbcgoodfood.com/about-bbc-good-food)
+2022-05-01 11:44:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/dianahenry> (referer: https://www.bbcgoodfood.com/recipes/roast-aubergine-coconut-curry)
+2022-05-01 11:44:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.bbcgoodfood.com/auth/login?redirect=https%3A%2F%2Fwww.bbcgoodfood.com%2Fuser-settings%2F> from <GET https://www.bbcgoodfood.com/user-settings>
+2022-05-01 11:44:24 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.bbcgoodfood.com/auth/login?redirect=https%3A%2F%2Fwww.bbcgoodfood.com%2Fuser-settings%2F>
+2022-05-01 11:44:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/podcast-cookie-creator> (referer: https://www.bbcgoodfood.com/author/miriamnice)
+2022-05-01 11:44:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/miriamnice/page/4> (referer: https://www.bbcgoodfood.com/author/miriamnice)
+2022-05-01 11:44:24 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.blondieskitchen.co.uk': <GET https://www.blondieskitchen.co.uk/>
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/miriamnice/page/2> (referer: https://www.bbcgoodfood.com/author/miriamnice)
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/lamb-with-olive-herb-stuffing> (referer: https://www.bbcgoodfood.com/author/samuelgoldsmith)
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/samuelgoldsmith/page/2> (referer: https://www.bbcgoodfood.com/author/samuelgoldsmith)
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/magaflorestrevino> (referer: https://www.bbcgoodfood.com/about-bbc-good-food)
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/podcast-business-consultant> (referer: https://www.bbcgoodfood.com/howto/guide/cant-believe-podcast)
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/janehornby> (referer: https://www.bbcgoodfood.com/recipes/spicy-fry-rice)
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/sarabuenfeld> (referer: https://www.bbcgoodfood.com/recipes/smoothie-cubes)
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/mothers-day-cake-ideas> (referer: https://www.bbcgoodfood.com/author/emilyburg)
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/test-kitchen-troubleshooting> (referer: https://www.bbcgoodfood.com/howto/guide/cant-believe-podcast)
+2022-05-01 11:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/cookie-recipes> (referer: https://www.bbcgoodfood.com/howto/guide/podcast-cookie-creator)
+2022-05-01 11:44:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/podcast-cook-book-author> (referer: https://www.bbcgoodfood.com/howto/guide/cant-believe-podcast)
+2022-05-01 11:44:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/bbc-good-food-health-podcast> (referer: https://www.bbcgoodfood.com)
+2022-05-01 11:44:26 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'podcasts.apple.com': <GET https://podcasts.apple.com/gb/podcast/the-bbc-good-food-health-podcast/id1476845124>
+2022-05-01 11:44:26 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'open.spotify.com': <GET https://open.spotify.com/show/5wj3b5k77R99ZkunyM3ae3>
+2022-05-01 11:44:26 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'play.acast.com': <GET https://play.acast.com/s/bbcgoodfoodpodcast>
+2022-05-01 11:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/dianahenry/page/4> (referer: https://www.bbcgoodfood.com/author/dianahenry)
+2022-05-01 11:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/dianahenry/page/12> (referer: https://www.bbcgoodfood.com/author/dianahenry)
+2022-05-01 11:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/miriamnice/page/3> (referer: https://www.bbcgoodfood.com/author/miriamnice)
+2022-05-01 11:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/fondue-set-best-cheese-chocolate> (referer: https://www.bbcgoodfood.com/author/magaflorestrevino)
+2022-05-01 11:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/working-drinks-industry> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/4)
+2022-05-01 11:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-valentines-day-health-and-wellbeing-gifts> (referer: https://www.bbcgoodfood.com/author/magaflorestrevino)
+2022-05-01 11:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/rookie-nice-podcast-chimichangas> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/4)
+2022-05-01 11:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-gadgets-making-pancakes> (referer: https://www.bbcgoodfood.com/author/magaflorestrevino)
+2022-05-01 11:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/cookbooks-for-kids> (referer: https://www.bbcgoodfood.com/howto/guide/podcast-cook-book-author)
+2022-05-01 11:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/miriamnice/page/5> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/4)
+2022-05-01 11:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/what-gifts-buy-make-and-post-your-mum-mothers-day-2015> (referer: https://www.bbcgoodfood.com/howto/guide/mothers-day-cake-ideas)
+2022-05-01 11:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/cookie-recipes?page=2> (referer: https://www.bbcgoodfood.com/recipes/collection/cookie-recipes)
+2022-05-01 11:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/health-podcast-happy-pear> (referer: https://www.bbcgoodfood.com/howto/guide/bbc-good-food-health-podcast)
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.anrdoezrs.net': <GET https://www.anrdoezrs.net/click-100262634-14009594?sid=bbcgoodfood-734419&url=https%3A%2F%2Fwww.wayfair.co.uk%2Fkitchenware-tableware%2Fpdp%2Fboska-holland-pro-nero-ceramicstainless-steel-fondue-set-bska1023.html>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.awin1.com': <GET https://www.awin1.com/cread.php?id=489797&clickref=bbcgoodfood-734419&awinmid=1751&p=https%3A%2F%2Fwww.lakeland.co.uk%2F63061%2FChocolate-Fondue-Gift-Set-for-Two>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'londonessenceco.com': <GET http://londonessenceco.com>
+2022-05-01 11:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/health-podcast-megan-rossi> (referer: https://www.bbcgoodfood.com/howto/guide/bbc-good-food-health-podcast)
+2022-05-01 11:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/lamb-chops-chilli-ligurian-broad-bean-pesto> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/4)
+2022-05-01 11:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/tahini-banana-cake> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/4)
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.livelarq.com': <GET https://www.livelarq.com/shop/larq-bottle-movement-purevis>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'clean.co': <GET https://clean.co/collections/shop/products/cleang-rhubarb-non-alcoholic>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'uk.mobot.com': <GET https://uk.mobot.com/collections/shop-the-range/products/grace?variant=32464682025019>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'niococktails.co.uk': <GET https://niococktails.co.uk/products/alcohol-free-cocktail-box>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.birdandblendtea.com': <GET https://www.birdandblendtea.com/products/build-your-own-tea-gift-box?variant=37661594189985&sfdr_ptcid=41505_100_672173840&sfdr_hash=0db859c313e07e4a13259a519b9330c2&gc_id=13826009643&h_ad_id=532385164926&gclid=Cj0KCQiAubmPBhCyARIsAJWNpiPaW4awLUjM5kr8By5RHX_UcwgULllnUfMnFJOUGe7N9L3mchwCEY8aAmTVEALw_wcB>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'positivebakes.com': <GET https://positivebakes.com/valentines-treat-gift-set-vegan-gluten-free-dairy-free-eggless/>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'john-lewis-and-partners.pxf.io': <GET https://john-lewis-and-partners.pxf.io/c/1236178/871855/12148?sku=234424488&s_ppc=2dx92700046357847324&tmad=c&tmcampid=2&gclid=CjwKCAiAgqDxBRBTEiwA59eEN6y5shOeCDBMV4c9w8S6m2kE7wpwS8hr_SVNHVp6-CjNO76pRdF-eRoCjgEQAvD_BwE&gclsrc=aw.ds%C2%A0&subId1=bbcgoodfood-302125&u=https%3A%2F%2Fwww.johnlewis.com%2Foxo-good-grips-whisk-l28cm%2Fp2003796%3Fsku%3D234424488%26s_ppc%3D2dx92700046357847324%26tmad%3Dc%26tmcampid%3D2%26gclid%3DCjwKCAiAgqDxBRBTEiwA59eEN6y5shOeCDBMV4c9w8S6m2kE7wpwS8hr_SVNHVp6-CjNO76pRdF-eRoCjgEQAvD_BwE%26gclsrc%3Daw.ds%25C2%25A0>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.waitrose.com': <GET https://www.waitrose.com/ecom/products/oxo-good-grips-11-inch-balloon-whisk/543998-130710-130711?source=aff_awin&utm_source=Hatch&utm_medium=affiliates&utm_campaign=https%3A%2F%2Fwww.waitrose.com%2Fecom%2Fproducts%2Foxo-good-grips-11-inch-balloon-whisk%2F543998-130710-130711&source=aff_awin&awc=3691_1579694746_96700a773ade8f5ff6fd24886ea5d72e>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.josephjoseph.com': <GET https://www.josephjoseph.com/en-gb/nest-9-plus>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.victorinox.com': <GET https://www.victorinox.com/global/en/Products/Cutlery/Bread-Knives/Spatula/p/5.2600.20>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.lakeland.co.uk': <GET https://www.lakeland.co.uk/12323/2-Clear-Squeezy-Table-Sauce-Bottles?src=gfeed&amp;efid=CjwKCAiAgqDxBRBTEiwA59eEN-8dTa9hB9aJHMkys4dU0B7TeCM705iD-qDvXq4a-eDAhfTnR_UXZxoCwusQAvD_BwE:G:s&amp;s_kwcid=AL!49!3!251275986372!!!g!37601638240!&amp;ev_chn=shop&amp;ef_id=CjwKCAiAgqDxBRBTEiwA59eEN-8dTa9hB9aJHMkys4dU0B7TeCM705iD-qDvXq4a-eDAhfTnR_UXZxoCwusQAvD_BwE:G:s&amp;gclid=CjwKCAiAgqDxBRBTEiwA59eEN-8dTa9hB9aJHMkys4dU0B7TeCM705iD-qDvXq4a-eDAhfTnR_UXZxoCwusQAvD_BwE%20>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jimbobart.com': <GET https://www.jimbobart.com/products/arewehavingpancakesplate%20%20>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.nkuku.com': <GET https://www.nkuku.com/products/mali-ribbed-sugar-pot-white-mp62>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'go.skimresources.com': <GET https://go.skimresources.com?id=71026X1587439&xs=1&url=https%3A%2F%2Fwww.procook.co.uk%2Fproduct%2Fprocook-nonstick-egg-rings-set-of-4%3Fgcshp%3D1%26fo_c%3D1344%26fo_k%3De038d9865e3dd47d900e140c8e1f368f%26fo_s%3Dgplauk%26gclid%3DCjwKCAiAo4OQBhBBEiwA5KWu_-icI13T2AZ648ZAHmkMSVJoDz7FpG6KUj34HzXa8eYOlCDKz-4Z8RoCVfwQAvD_BwE>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.waterstones.com': <GET https://www.waterstones.com/book/lets-make-ramen/hugh-amano/sarah-becan/9780399581991>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'blackwells.co.uk': <GET https://blackwells.co.uk/bookshop/product/9780613639880>
+2022-05-01 11:44:28 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.whsmith.co.uk': <GET https://www.whsmith.co.uk/products/the-vegetarian-cookbook-more-than-50-recipes-for-young-cooks/hardback/9780241407028.html>
+2022-05-01 11:44:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/dianahenry/page/5> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/4)
+2022-05-01 11:44:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/candy-cane-vodka> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/3)
+2022-05-01 11:44:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/peanut-butter-smoothie> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/3)
+2022-05-01 11:44:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/rosita> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/3)
+2022-05-01 11:44:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/soft-boiled-eggs> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/3)
+2022-05-01 11:44:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-cheese-subscriptions-delivery-boxes> (referer: https://www.bbcgoodfood.com/review/fondue-set-best-cheese-chocolate)
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.specialistcheesemakers.co.uk': <GET http://www.specialistcheesemakers.co.uk/article/make-life-better-order-cheese-online-31.aspx>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'academyofcheese.org': <GET https://academyofcheese.org/>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'thecheesecollective.co.uk': <GET https://thecheesecollective.co.uk/products/the-usual>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'provisionslondon.co.uk': <GET https://provisionslondon.co.uk/collections/cheese/products/cheese-canteen>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.thecourtyarddairy.co.uk': <GET https://www.thecourtyarddairy.co.uk/shop/buy-cheese/cheese-selection-boxes/buy-award-winner-cheese-gift-box/>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.decentdrop.com': <GET https://www.decentdrop.com/>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.paxtonandwhitfield.co.uk': <GET https://www.paxtonandwhitfield.co.uk/shop/cheese-club>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'fenfarmdairy.co.uk': <GET https://fenfarmdairy.co.uk/content-restricted/?r=10504&wcm_redirect_to=page&wcm_redirect_id=10504>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.pongcheese.co.uk': <GET https://www.pongcheese.co.uk/buy/the-ultimate-pong-box>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.quickes.co.uk': <GET https://www.quickes.co.uk/collections/hampers-cheese-cakes/products/cheddar-tasting-box>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.finecheese.co.uk': <GET https://www.finecheese.co.uk/cheese-gifts/monthly-cheese-subscription>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.theethicaldairy.co.uk': <GET https://www.theethicaldairy.co.uk/cheese-shop/cheesy-night>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'rennetandrind.co.uk': <GET https://rennetandrind.co.uk/products/mystery-cheese-box>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.thecheesegeek.com': <GET https://www.thecheesegeek.com/products/the-lionel>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'the-cheese-bar-london.myshopify.com': <GET https://the-cheese-bar-london.myshopify.com/products/the-home-veggie-boy-mail-order>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.cheaze.co.uk': <GET https://www.cheaze.co.uk/subscriptions>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'boutinot.com': <GET https://boutinot.com/wines/ontanon-rioja-crianza/>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'decent-drop.myshopify.com': <GET https://decent-drop.myshopify.com/collections/upcoming-drops>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'friends.fenfarmdairy.co.uk': <GET https://friends.fenfarmdairy.co.uk/>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'homage2fromage.myshopify.com': <GET https://homage2fromage.myshopify.com/>
+2022-05-01 11:44:30 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.cheese-plus.co.uk': <GET https://www.cheese-plus.co.uk/luxury-cheese-board-chbo002.html>
+2022-05-01 11:44:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/dianahenry/page/11> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/12)
+2022-05-01 11:44:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/dianahenry/page/9> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/12)
+2022-05-01 11:44:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/10-game-changers-food-greats-everyone-should-know-about> (referer: https://www.bbcgoodfood.com/howto/guide/working-drinks-industry)
+2022-05-01 11:44:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/home-brewing-safety-tips> (referer: https://www.bbcgoodfood.com/howto/guide/working-drinks-industry)
+2022-05-01 11:44:30 [filelock] DEBUG: Attempting to acquire lock 140358643391216 on /home/nikolaus/.cache/python-tldextract/3.8.0.final__usr__7d8fdf__tldextract-3.2.1/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-01 11:44:30 [filelock] DEBUG: Lock 140358643391216 acquired on /home/nikolaus/.cache/python-tldextract/3.8.0.final__usr__7d8fdf__tldextract-3.2.1/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-01 11:44:30 [filelock] DEBUG: Attempting to acquire lock 140358648490976 on /home/nikolaus/.cache/python-tldextract/3.8.0.final__usr__7d8fdf__tldextract-3.2.1/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-05-01 11:44:30 [filelock] DEBUG: Lock 140358648490976 acquired on /home/nikolaus/.cache/python-tldextract/3.8.0.final__usr__7d8fdf__tldextract-3.2.1/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-05-01 11:44:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): publicsuffix.org
+2022-05-01 11:44:30 [urllib3.connectionpool] DEBUG: https://publicsuffix.org:443 "GET /list/public_suffix_list.dat HTTP/1.1" 200 None
+2022-05-01 11:44:30 [filelock] DEBUG: Attempting to release lock 140358648490976 on /home/nikolaus/.cache/python-tldextract/3.8.0.final__usr__7d8fdf__tldextract-3.2.1/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-05-01 11:44:30 [filelock] DEBUG: Lock 140358648490976 released on /home/nikolaus/.cache/python-tldextract/3.8.0.final__usr__7d8fdf__tldextract-3.2.1/urls/62bf135d1c2f3d4db4228b9ecaf507a2.tldextract.json.lock
+2022-05-01 11:44:30 [filelock] DEBUG: Attempting to release lock 140358643391216 on /home/nikolaus/.cache/python-tldextract/3.8.0.final__usr__7d8fdf__tldextract-3.2.1/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-01 11:44:30 [filelock] DEBUG: Lock 140358643391216 released on /home/nikolaus/.cache/python-tldextract/3.8.0.final__usr__7d8fdf__tldextract-3.2.1/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2022-05-01 11:44:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/howto/guide/baking-equipment> from <GET https://www.bbcgoodfood.com/content/kimberley-wilsons-top-five-cooling-racks>
+2022-05-01 11:44:31 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'shropshirelad.co.uk': <GET http://shropshirelad.co.uk/>
+2022-05-01 11:44:31 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.fowlmouths.co.uk': <GET https://www.fowlmouths.co.uk/>
+2022-05-01 11:44:31 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.brewersfriend.com': <GET https://www.brewersfriend.com/beer-priming-calculator/>
+2022-05-01 11:44:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/review/best-griddle-pans> from <GET https://www.bbcgoodfood.com/content/test-five-best-griddle-pans>
+2022-05-01 11:44:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/lamb-meatballs-sour-cherries-pomegranates-pistachios> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/5)
+2022-05-01 11:44:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/dianahenry/page/10> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/12)
+2022-05-01 11:44:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/kisir> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/5)
+2022-05-01 11:44:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/collection/dairy-free-breakfast-recipes?page=2> (referer: https://www.bbcgoodfood.com/recipes/collection/dairy-free-breakfast-recipes)
+2022-05-01 11:44:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/review/test-five-best-blenders> from <GET https://www.bbcgoodfood.com/content/test-five-best-blenders>
+2022-05-01 11:44:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/letterbox-gifts-by-post> (referer: https://www.bbcgoodfood.com/review/best-cheese-subscriptions-delivery-boxes)
+2022-05-01 11:44:31 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.bbcgoodfood.com/search?q=Dairy-free+breakfast+recipes>
+2022-05-01 11:44:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/howto/guide/what-to-serve-on-a-cheeseboard> from <GET https://www.bbcgoodfood.com/howto/guide/how-put-together-ultimate-cheeseboard>
+2022-05-01 11:44:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-recipe-subscription-boxes> (referer: https://www.bbcgoodfood.com/review/best-cheese-subscriptions-delivery-boxes)
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.borougholives.co.uk': <GET http://www.borougholives.co.uk/>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'butlerscheeses.co.uk': <GET https://butlerscheeses.co.uk/collections/through-the-letterbox>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'thegoodnessproject.co.uk': <GET https://thegoodnessproject.co.uk/shop/your-letterbox-friendly-healthy-snack-tea-box>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.coop.co.uk': <GET https://www.coop.co.uk/products/banrock-station-sustainable-bottle-merlot>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.souschef.co.uk': <GET https://www.souschef.co.uk/products/sous-chef-gift-voucher>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.bloomandwild.com': <GET https://www.bloomandwild.com/send-flowers/tagonly/letterbox>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'climpsonandsons.com': <GET https://climpsonandsons.com/collections/giftguide/products/gift-card>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.libertylondon.com': <GET http://www.libertylondon.com/uk/sea-salt-milk-chocolate-bar-70g-1001199784.html>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.notonthehighstreet.com': <GET http://www.notonthehighstreet.com/letterboxhamper/product/gardeners-letter-box-hamper>
+2022-05-01 11:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-griddle-pans> (referer: https://www.bbcgoodfood.com/recipes/lamb-chops-chilli-ligurian-broad-bean-pesto)
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'hellofresh-uk.648q.net': <GET https://hellofresh-uk.648q.net/c/1236178/651733/7901?subId1=bbcgoodfood-305298&u=https%3A%2F%2Fwww.hellofresh.co.uk%2F>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.simplycook.com': <GET https://www.simplycook.com/>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.riverford.co.uk': <GET https://www.riverford.co.uk/organic-recipe-boxes-and-kits?utm_bicampaign=brand_exact&utm_bicampaigntype=brand_exact&utm_biterm=exact&gclid=CjwKCAjw9LSSBhBsEiwAKtf0n2in3STiBIZ5KIgvQtmn8JD4XWAuiWTMqtnxAbHtdaYteLpDCuC_8BoCF8kQAvD_BwE>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'pickleandsquash.com': <GET https://pickleandsquash.com/product/veggie-recipe-box/>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'feastbox.co.uk': <GET https://feastbox.co.uk/pages/weekly-menu>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'plan.pastaevangelists.com': <GET https://plan.pastaevangelists.com/menu>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'pastaevangelists.com': <GET https://pastaevangelists.com/>
+2022-05-01 11:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/how-make-gin> (referer: https://www.bbcgoodfood.com/howto/guide/home-brewing-safety-tips)
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.prestige.co.uk': <GET https://www.prestige.co.uk/51027-stone-quartz-28cm-grill-pan.html>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.tesco.com': <GET https://www.tesco.com/groceries/en-GB/products/295155964>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.britishonlinesupermarket.com': <GET https://www.britishonlinesupermarket.com/go-cook-forged-aluminium-grill-pan-24cm.html>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.zyliss.co.uk': <GET https://www.zyliss.co.uk/zyliss-cook-26cm-non-stick-square-grill-pan.html>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.marksandspencer.com': <GET https://www.marksandspencer.com/stainless-steel-non-stick-27cm-grill-pan/p/hbp22386088>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.towerhousewares.co.uk': <GET https://www.towerhousewares.co.uk/cookware-ovenware-c87/frying-pans-c98/cerastone-finish-c118/cerastone-forged-25cm-grill-pan-graphite-p304>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.johnlewis.com': <GET https://www.johnlewis.com/le-creuset-cast-iron-26cm-signature-square-grillit/p3911266?sku=235109258&amp;colour=Teal&amp;s_afcid=af_169609&amp;tmad=c&amp;awc=1203_1601301329_3d4415c668353fdb41dbf067b804d528&amp;tmcampid=48>
+2022-05-01 11:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/how-make-iced-coffee-home> (referer: https://www.bbcgoodfood.com/howto/guide/home-brewing-safety-tips)
+2022-05-01 11:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/home-brewing> (referer: https://www.bbcgoodfood.com/howto/guide/home-brewing-safety-tips)
+2022-05-01 11:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/fresh-smoked-salmon-rillettes> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/10)
+2022-05-01 11:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/dianahenry/page/6> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/5)
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.brewuk.co.uk': <GET https://www.brewuk.co.uk/>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.brewstore.co.uk': <GET http://www.brewstore.co.uk/>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.themaltmiller.co.uk': <GET https://www.themaltmiller.co.uk/index.php>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'howtobrew.com': <GET http://howtobrew.com/>
+2022-05-01 11:44:32 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'thebeershoplondon.co.uk': <GET http://thebeershoplondon.co.uk>
+2022-05-01 11:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/healthy-egg-chips> (referer: https://www.bbcgoodfood.com/recipes/collection/dairy-free-breakfast-recipes?page=2)
+2022-05-01 11:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/gravadlax-celeriac-fennel-salad> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/10)
+2022-05-01 11:44:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/one-pan-summer-eggs> (referer: https://www.bbcgoodfood.com/recipes/collection/dairy-free-breakfast-recipes?page=2)
+2022-05-01 11:44:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/gifts-foodies> (referer: https://www.bbcgoodfood.com/review/letterbox-gifts-by-post)
+2022-05-01 11:44:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/reviews/pasta-evangelists-review> (referer: https://www.bbcgoodfood.com/review/best-recipe-subscription-boxes)
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.rossandrossgifts.co.uk': <GET https://www.rossandrossgifts.co.uk/product/the-homemade-curing-tube-salmon-smoky/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'gunpowderspices.co.uk': <GET https://gunpowderspices.co.uk/collections/gunpowder-spice-chests/products/gunpowder-rubs-complete-collection>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'cutterandsquidge.com': <GET https://cutterandsquidge.com/products/christmas-family-hamper>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.biscuiteers.com': <GET https://www.biscuiteers.com/send-a-gift/christmas-baubles-diy-tin>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'meltchocolates.com': <GET https://meltchocolates.com/product/orangettes/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.bettys.co.uk': <GET https://www.bettys.co.uk/advent-cakes-box-of-4>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.thecharcuteriebox.co.uk': <GET https://www.thecharcuteriebox.co.uk/charcuterieselection/p/3>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'shop.nationaltrust.org.uk': <GET https://shop.nationaltrust.org.uk/national-trust-jingle-berry-jam.html>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.selfridges.com': <GET https://www.selfridges.com/GB/en/cat/selfridges-selection-festive-marzipan-75g_R03780840/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.welshcheesecompany.co.uk': <GET https://www.welshcheesecompany.co.uk/product/taste-of-wales-collection/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.eatenalive.co.uk': <GET https://www.eatenalive.co.uk/shop/p/kimchisubscription>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.byplantbae.com': <GET https://www.byplantbae.com/products/scotch-bonnet-chilli-jam>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.goodsixty.co.uk': <GET https://www.goodsixty.co.uk/retailers/london/712-the-black-pig?q=40098>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'seggiano.com': <GET https://seggiano.com/product/italian-extra-virgin-olive-oil/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'melroseandmorgan.com': <GET https://melroseandmorgan.com/collections/melrose-and-morgan-products/products/sea-salt-caramels-box?_pos=1&_sid=7872974a7&_ss=r>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'honeywellbakes.com': <GET https://honeywellbakes.com/product/jar-of-polar-bear-biscuits/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'strazzanti.co': <GET https://strazzanti.co/product/the-sicilian-aperitivo-trio-gift-set/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'shop.rootedspices.com': <GET https://shop.rootedspices.com/collections/all-spices/products/serial-bruncher>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'liberationcocktails.com': <GET https://liberationcocktails.com/collections/gift-packs/products/espresso-martini-gift-box>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.masterofmalt.com': <GET https://www.masterofmalt.com/spirit/tuscan-tree/tuscan-tree-blood-orange-non-alcoholic-aperitivo-spirit/?srh=1>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.thewhiskyexchange.com': <GET https://www.thewhiskyexchange.com/p/59957/20-whiskies-that-changed-the-world-tasting-set-20x3cl>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'oldspikeroastery.com': <GET https://oldspikeroastery.com/collections/coffee/products/benedict-blend-espresso>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.thebotanist.com': <GET https://www.thebotanist.com/shop/the-botanist-gin-herb-planter/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.coastalforaging.co.uk': <GET https://www.coastalforaging.co.uk/gift-vouchers/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.redcandy.co.uk': <GET https://www.redcandy.co.uk/mags-crabby-spoon-holder>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.magimix.co.uk': <GET https://www.magimix.co.uk/cooking-food-processor/23-cook-expert.html>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'shoptherivercafe.co.uk': <GET https://shoptherivercafe.co.uk/products/ravioli-stamp?_pos=1&_psq=ravilo&_ss=e&_v=1.0>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.talacooking.com': <GET https://www.talacooking.com/products/10b31388?_pos=3&_sid=f160eadd9&_ss=r>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.carosomerset.com': <GET https://www.carosomerset.com/products/dough-scraper?_pos=1&_sid=3140027ec&_ss=r>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'thermapen.co.uk': <GET https://thermapen.co.uk/thermapen-thermometers/184-thermapen-one-thermometer.html>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.olivemagazine.com': <GET https://www.olivemagazine.com/reviews/smarter-coffee-machine-review/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'shop.smeguk.com': <GET https://shop.smeguk.com/CKFF2401CRM>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.rexlondon.com': <GET https://www.rexlondon.com/turquoise-santana-platter>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'perkinsandmorley.com': <GET https://perkinsandmorley.com/product/gateau-tea-towel-baking-mad/>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.amuselabouche.com': <GET https://www.amuselabouche.com/products/rainbow-wide-stripe-napkin?_pos=1&_psq=rainbow%20napkins&_ss=e&_v=1.0>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.joannazenghelis.com': <GET https://www.joannazenghelis.com/shop/wired-double-oven-gloves>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.partnerinwine.co.uk': <GET https://www.partnerinwine.co.uk/products/stainless-steel-insulated-wine-bottle>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.iamfy.co': <GET https://www.iamfy.co/product/star-pillar-candle---dusty-turquoise---soy-wax>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'coffeeandcloth.co.uk': <GET https://coffeeandcloth.co.uk/products/hk-living-set-of-4-ristretto-mugs?_pos=1&_sid=d1ede27d1&_ss=r>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.hammade.com': <GET https://www.hammade.com/products/wine-tasting-rabbit-mug?_pos=1&_sid=d0675296b&_ss=r>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'thirteen-thirtyone.com': <GET https://thirteen-thirtyone.com/products/yuzu-breakfast-set>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'studio-ophelia.com': <GET https://studio-ophelia.com/collections/galaxy-bowls/products/spotted-dog-pasta-bowl>
+2022-05-01 11:44:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/reviews/best-paella-pans> (referer: https://www.bbcgoodfood.com/review/best-griddle-pans)
+2022-05-01 11:44:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/guide-classic-cocktails> (referer: https://www.bbcgoodfood.com/howto/guide/how-make-gin)
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'procookltd.sjv.io': <GET https://procookltd.sjv.io/c/1236178/994203/13039?subId1=bbcgoodfood-701435&u=https%3A%2F%2Fwww.procook.co.uk%2Fproduct%2Fprocook-carbon-steel-nonstick-paella-pan-38cm>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'uk.zwilling-shop.com': <GET https://uk.zwilling-shop.com/Kitchen-World/Cookware/Pans/Frying-pans-Skillets/26cm-Cast-Iron-Double-Handle-Frying-Pan-Black-STAUB-40511-725-0.html?gclid=CjwKCAjwq7aGBhADEiwA6uGZp_npFzlEx8tyCo29BCSZt40AjbYE2ZNyO8hyNGwV8bVGGOlXZ62r7RoC-ecQAvD_BwE>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.divertimenti.co.uk': <GET https://www.divertimenti.co.uk/products/carbon-steel-paella-pan-38cm>
+2022-05-01 11:44:33 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.samuelgroves.com': <GET https://www.samuelgroves.com/Products/00310001004a0003/M0622>
+2022-05-01 11:44:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/how-steam-milk> (referer: https://www.bbcgoodfood.com/howto/guide/how-make-iced-coffee-home)
+2022-05-01 11:44:34 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.bbcgoodfood.com/howto/guide/what-to-serve-on-a-cheeseboard> (referer: https://www.bbcgoodfood.com/review/best-cheese-subscriptions-delivery-boxes)
+2022-05-01 11:44:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/8-ways-cook-beer> (referer: https://www.bbcgoodfood.com/howto/guide/home-brewing)
+2022-05-01 11:44:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/food-and-beer-matching-part-one-lager> (referer: https://www.bbcgoodfood.com/howto/guide/home-brewing)
+2022-05-01 11:44:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/review/top-10-coffee-gadgets> from <GET https://www.bbcgoodfood.com/content/top-10-coffee-gadgets>
+2022-05-01 11:44:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/mocha-hazelnut-cake> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/6)
+2022-05-01 11:44:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/marycadogan> (referer: https://www.bbcgoodfood.com/recipes/one-pan-summer-eggs)
+2022-05-01 11:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/best-trifle-bowls> (referer: https://www.bbcgoodfood.com/howto/guide/gifts-foodies)
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.dartington.co.uk': <GET https://www.dartington.co.uk/trifle-bowl.html?awc=19429_1628002702_2f2490bd6525cd0536afbf8abbffaf00>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.joules.com': <GET https://www.joules.com/Home-Garden/All-Kitchen/Glass-Trifle/Bowl?size=One-Size&id=211473%7CBEESGLASS%7CONE&isCurrentCustomerRegistered=false&siteUid=joules-uk&isPredictiveSearchEnabled=false&isASMMode=false&isGBWebsite=true&adobeUrlContext=%2F%2Fassets.adobedtm.com%2F3f090bb4c40d%2Fad14f8fe049b%2Flaunch-54428a8ebf90.min.js&minCharForSuggest=2&isMobileUE=false&isOISMode=false&isUSWebsite=false&isDEWebsite=false&siteName=Joules+UK&requestUrl=https%3A%2F%2Fwww.joules.com%2Fsearch%3Ftext%3Dtrifle-bowl>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.hartsofstur.com': <GET https://www.hartsofstur.com/lsa-serve-comport-lid-clear-sz19-g912-19-301.html?utm_source=kelkoouk&utm_medium=cpc&utm_campaign=kelkooclick&utm_term=LSA+Serve+Comport+%26+Lid+Clear&from=kelkoo&gclid=CjwKCAjw0qOIBhBhEiwAyvVcfthW3tjOdAYvqVCBErOk1aCB5QDquIoADq_zXf0rYbjVfpD-cYhgRoCtJkQAvD_BwE>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.emmabridgewater.co.uk': <GET https://www.emmabridgewater.co.uk/products/black-toast-glass-trifle-bowl-boxed?variant=1167712944132&gclid=CjwKCAjwmK6IBhBqEiwAocMc8rGkbji6OVRzYUZcf4VQghqEId8EK9lD--UH4fcrg4oUZlnFp-YvrhoCR0oQAvD_BwE>
+2022-05-01 11:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/why-you-should-be-drinking-mediterranean-wine> (referer: https://www.bbcgoodfood.com/howto/guide/working-drinks-industry)
+2022-05-01 11:44:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/recipes/category/all-cocktails-drinks> from <GET https://www.bbcgoodfood.com/feature/cocktails-drinks>
+2022-05-01 11:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/reviews> (referer: https://www.bbcgoodfood.com/reviews/pasta-evangelists-review)
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.aldi.co.uk': <GET https://www.aldi.co.uk/maison-sur-le-littoral-ros%C3%A9/p/702623367341600>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.frazierswine.co.uk': <GET https://www.frazierswine.co.uk/nero-d-avola-sicilia-rupe-secca-2018/>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'coatesandseely.com': <GET https://coatesandseely.com/product/brut-reserve-nv/>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.weaverswines.com': <GET https://www.weaverswines.com/rupe-secca-nero-d-avola-sicily-2019.html>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.thewinesociety.com': <GET https://www.thewinesociety.com/shop/productdetail.aspx?section=pd&amp;pl=&amp;pc=&amp;prl=qvg&amp;cc=&amp;pd=IT28671>
+2022-05-01 11:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/reusable-coffee-cups-test> (referer: https://www.bbcgoodfood.com/howto/guide/how-steam-milk)
+2022-05-01 11:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/cappuccino> (referer: https://www.bbcgoodfood.com/howto/guide/how-steam-milk)
+2022-05-01 11:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/sarabuenfeld/page/56> (referer: https://www.bbcgoodfood.com/author/sarabuenfeld)
+2022-05-01 11:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/flat-white> (referer: https://www.bbcgoodfood.com/howto/guide/how-steam-milk)
+2022-05-01 11:44:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/review/best-stand-mixers> from <GET https://www.bbcgoodfood.com/content/top-five-food-mixers>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.kleankanteen.co.uk': <GET https://www.kleankanteen.co.uk/collections/insulated-tkwide/products/insulated-tkwide-12oz-355ml?variant=28552533999690>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.menkind.co.uk': <GET https://www.menkind.co.uk/the-mighty-travel-mug>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'dexam.co.uk': <GET https://dexam.co.uk/mighty-mug-go-travel-470ml-red>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.tefal.co.uk': <GET https://www.tefal.co.uk/accessories-store/360-ML-isotherm-mug---TRAVEL-MUG-K3081114/a/3100518069>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.wayfair.co.uk': <GET https://www.wayfair.co.uk/Typhoon--Pure-Active-Travel-Mug-1613.078-L7451-K~LOZ10033.html>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.apple.com': <GET http://www.apple.com/uk/shop/product/HNNM2Z/A/ember-temperature-control-travel-mug-2-12-oz>
+2022-05-01 11:44:37 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.food.gov.uk': <GET https://www.food.gov.uk/science/bpa>
+2022-05-01 11:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/golden-beer-battered-fish-chips> (referer: https://www.bbcgoodfood.com/howto/guide/food-and-beer-matching-part-one-lager)
+2022-05-01 11:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/top-10-coffee-gadgets> (referer: https://www.bbcgoodfood.com/howto/guide/how-make-iced-coffee-home)
+2022-05-01 11:44:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-cake-tins> (referer: https://www.bbcgoodfood.com/howto/guide/best-trifle-bowls)
+2022-05-01 11:44:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-doughnut-makers> (referer: https://www.bbcgoodfood.com/howto/guide/best-trifle-bowls)
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'bbcgoodfood.com': <GET https://bbcgoodfood.com/videos/techniques/how-batter-fish-video/>
+2022-05-01 11:44:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/rhubarb-crumble-trifle> (referer: https://www.bbcgoodfood.com/howto/guide/best-trifle-bowls)
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.madebyknock.com': <GET http://www.madebyknock.com/>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.bairroalto.co.uk': <GET http://www.bairroalto.co.uk/>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.aeropress.co.uk': <GET http://www.aeropress.co.uk/>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.hario.co.uk': <GET http://www.hario.co.uk/>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.coffeehit.co.uk': <GET https://www.coffeehit.co.uk/>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'uk.keepcup.com': <GET https://uk.keepcup.com/>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.theguardian.com': <GET https://www.theguardian.com/environment/2016/mar/15/coffee-cup-britons-3-billion-so-few-recylced>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'thecoffeevine.com': <GET http://thecoffeevine.com/>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.ikawacoffee.com': <GET http://www.ikawacoffee.com/>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'caffeinemag.com': <GET https://caffeinemag.com/>
+2022-05-01 11:44:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/how-drink-responsibly> (referer: https://www.bbcgoodfood.com/howto/guide/why-you-should-be-drinking-mediterranean-wine)
+2022-05-01 11:44:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/how-wine-has-changed-30-years> (referer: https://www.bbcgoodfood.com/howto/guide/why-you-should-be-drinking-mediterranean-wine)
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.vonhaus.com': <GET https://www.vonhaus.com/vh_en/seasonal/gifts/3-in-1-snack-maker>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.cakecraftcompany.com': <GET https://www.cakecraftcompany.com/tools-equipment-c165/moulds-c497/wilton-12-cavity-mini-donut-pan-p5768>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'pyrex.co.uk': <GET https://pyrex.co.uk/collections/cake-and-tart-dish/products/bake-enjoy-glass-loaf-dish-high-resistance>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'in-txt.net': <GET https://in-txt.net/shop-rest/api/track/v2/823/7/8903?oi=-8903&mk=GBP_EN&pr=page-bbcgoodfood-0-its-txt-pos&su=https%3A%2F%2Fbbcgoodfood.production.wcp.imdserve.com%2Fwp-admin%2Fpost.php%3Fpost%3D717248%26action%3Dedit&tu=https%3A%2F%2Fwww.amazon.co.uk%2Fdp%2FB00005NCWY%3FlinkCode%3Dosi%26th%3D1%26psc%3D1&referrer=https://bbcgoodfood.production.wcp.imdserve.com/wp-admin/post.php?post=717248&action=edit>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'alcoholchange.org.uk': <GET https://alcoholchange.org.uk/alcohol-facts/fact-sheets/alcohol-statistics>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.drinkaware.co.uk': <GET https://www.drinkaware.co.uk>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.nhs.uk': <GET https://www.nhs.uk/live-well/alcohol-support/binge-drinking-effects/>
+2022-05-01 11:44:38 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.gov.uk': <GET https://www.gov.uk/drink-drive-limit>
+2022-05-01 11:44:40 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/howto/guide/what-to-serve-on-a-cheeseboard> from <GET https://www.bbcgoodfood.com/howto/guide/essential-cheeseboard-cutting-guide>
+2022-05-01 11:44:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/miriamnice/page/43> (referer: https://www.bbcgoodfood.com/author/miriamnice)
+2022-05-01 11:44:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/good-food-podcast-gin-taster> (referer: https://www.bbcgoodfood.com/howto/guide/cant-believe-podcast)
+2022-05-01 11:44:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/reviews/page/11> (referer: https://www.bbcgoodfood.com/reviews)
+2022-05-01 11:44:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/sarabuenfeld/page/55> (referer: https://www.bbcgoodfood.com/author/sarabuenfeld/page/56)
+2022-05-01 11:44:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/drunken-berries-cream> (referer: https://www.bbcgoodfood.com/author/sarabuenfeld/page/56)
+2022-05-01 11:44:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-sandwich-toaster-toastie-makers> (referer: https://www.bbcgoodfood.com/review/top-10-coffee-gadgets)
+2022-05-01 11:44:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/review/best-juicers> from <GET https://www.bbcgoodfood.com/howto/guide/top-5-juicers-and-smoothie-makers>
+2022-05-01 11:44:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-soup-makers-test> (referer: https://www.bbcgoodfood.com/review/top-10-coffee-gadgets)
+2022-05-01 11:44:43 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.qdstores.co.uk': <GET https://www.qdstores.co.uk/products/beko-soup-maker.html>
+2022-05-01 11:44:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/how-choose-wine> (referer: https://www.bbcgoodfood.com/howto/guide/how-wine-has-changed-30-years)
+2022-05-01 11:44:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/why-you-should-be-drinking-verdejo-summer> (referer: https://www.bbcgoodfood.com/howto/guide/why-you-should-be-drinking-mediterranean-wine)
+2022-05-01 11:44:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/howto/guide/treat-your-mum-sauvignon-blanc> (referer: https://www.bbcgoodfood.com/howto/guide/how-wine-has-changed-30-years)
+2022-05-01 11:44:44 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.sainsburys.co.uk': <GET https://www.sainsburys.co.uk>
+2022-05-01 11:44:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/miriamnice/page/41> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/43)
+2022-05-01 11:44:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/miriamnice/page/40> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/43)
+2022-05-01 11:44:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/dianahenry/page/7> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/6)
+2022-05-01 11:44:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/roast-salmon-spiced-coconut-crumbs> (referer: https://www.bbcgoodfood.com/author/sarabuenfeld/page/55)
+2022-05-01 11:44:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-juicers> (referer: https://www.bbcgoodfood.com/review/top-10-coffee-gadgets)
+2022-05-01 11:44:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/chilli-chicken-honey-soy> (referer: https://www.bbcgoodfood.com/author/sarabuenfeld/page/55)
+2022-05-01 11:44:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/review/best-health-gadgets> (referer: https://www.bbcgoodfood.com/review/best-soup-makers-test)
+2022-05-01 11:44:47 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.nutrition.org.uk': <GET https://www.nutrition.org.uk/>
+2022-05-01 11:44:47 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jeannettejackson.com': <GET http://www.jeannettejackson.com/>
+2022-05-01 11:44:47 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.juicers.co.uk': <GET https://www.juicers.co.uk/hurom-h200-self-feeding-slow-juicer-in-black/>
+2022-05-01 11:44:47 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.vitality4life.co.uk': <GET https://www.vitality4life.co.uk/biochef-axis-cold-press-juicer>
+2022-05-01 11:44:47 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.ukjuicers.com': <GET https://www.ukjuicers.com/kuvings-whole-slow-juicer-b1700>
+2022-05-01 11:44:47 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.hurom.co.uk': <GET https://www.hurom.co.uk/hurom-h200-self-feeding-juicer>
+2022-05-01 11:44:47 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.fenwick.co.uk': <GET https://www.fenwick.co.uk/home-and-tech/kitchen/kitchen-electricals/juicers-and-blenders/cjf01-citrus-juicer/2530020410803.html>
+2022-05-01 11:44:47 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.currys.co.uk': <GET https://www.currys.co.uk/gbuk/household-appliances/small-kitchen-appliances/food-and-drink-preparation/juicers-and-blenders/smeg-50-s-retro-style-cjf01cruk-citrus-juicer-cream-10195779-pdt.html>
+2022-05-01 11:44:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.bbcgoodfood.com/review/best-kettles> from <GET https://www.bbcgoodfood.com/content/top-five-clever-kettles>
+2022-05-01 11:44:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/reviews/page/8> (referer: https://www.bbcgoodfood.com/reviews/page/11)
+2022-05-01 11:44:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/smoky-pulled-aubergine-black-bean-tacos> (referer: https://www.bbcgoodfood.com/howto/guide/why-you-should-be-drinking-verdejo-summer)
+2022-05-01 11:44:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/article/victoria-moore-simple-drinks-share> (referer: https://www.bbcgoodfood.com/howto/guide/how-choose-wine)
+2022-05-01 11:44:49 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2022-05-01 11:44:49 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2022-05-01 11:44:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/author/miriamnice/page/39> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/40)
+2022-05-01 11:44:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/spanish-tortilla> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/40)
+2022-05-01 11:44:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/souffle-mac-n-cheese> (referer: https://www.bbcgoodfood.com/author/miriamnice/page/40)
+2022-05-01 11:44:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/salt-cod-tortilla> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/7)
+2022-05-01 11:44:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/maple-baked-granola> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/7)
+2022-05-01 11:44:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/arroz-con-leche-strawberries-sherry> (referer: https://www.bbcgoodfood.com/author/dianahenry/page/11)
+2022-05-01 11:44:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bbcgoodfood.com/recipes/celery-juice> (referer: https://www.bbcgoodfood.com/review/best-juicers)
+2022-05-01 11:44:51 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
