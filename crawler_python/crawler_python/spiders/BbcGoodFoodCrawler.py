@@ -2,18 +2,20 @@ from scrapy import Item, Field
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 
-class AllRecipesCrawler(CrawlSpider):
-    name = 'allrecipes'
-    allowed_domains = ['www.allrecipes.com']
-    start_urls = ['https://www.allrecipes.com']
+
+class BbcGoodFoodCrawler(CrawlSpider):
+    name = 'bbcgoodfood'
+    allowed_domains = ['www.bbcgoodfood.com']
+    start_urls = ['https://www.bbcgoodfood.com/recipes']
     rules = (Rule(LinkExtractor(), callback='parse_item', follow=True),)
-    filename = 'allrecipes.txt'
-    accept_url = "https://www.allrecipes.com/recipe/"
-    reject_urls = ["printview", "page"]
+    filename = 'bbcgoodfood.txt'
+
+    accept_url = "https://www.bbcgoodfood.com/recipes/"
+    reject_urls = ["https://www.bbcgoodfood.com/recipes/category/", "https://www.bbcgoodfood.com/recipes/collection/" ]
 
     def parse_item(self, response):
         if response.status == 200:
-            url =  response.url
+            url = response.url
 
             item = { }
             item['url'] = response.url
@@ -23,7 +25,7 @@ class AllRecipesCrawler(CrawlSpider):
             if url.startswith(self.accept_url):
                 matches = True
                 for prefix in self.reject_urls:
-                    if prefix in url:
+                    if url.startswith(prefix):
                         matches = False
 
                 if matches:
