@@ -44,6 +44,7 @@ public class RecipeMapper {
         dto.setWriter(entity.getWriter());
         dto.setComments(entity.getComments());
         dto.setNumberOfIngredients(entity.getNumberOfIngredients());
+        dto.setPhoto_url(entity.getPhoto_url());
 
         dto.setCategory(categoryMapper.toDTO(entity.getCategoryId()));
         dto.setNutritionInfo(nutritionInfoMapper.toDTO(entity.getNutritionInfoId()));

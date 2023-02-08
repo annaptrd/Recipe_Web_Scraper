@@ -31,6 +31,10 @@ public class Recipe implements Serializable {
     @Size(min = 1, max = 4096)
     @Column(name = "uri")
     private String uri;
+    @Basic(optional = true)
+    @Size(min = 1, max = 4096)
+    @Column(name = "photo_url")
+    private String photo_url;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 1024)
@@ -282,5 +286,12 @@ public class Recipe implements Serializable {
     public String toString() {
         return "model.Recipe[ id=" + id + " ]";
     }
-    
+
+    public String getPhoto_url() {
+        return photo_url;
+    }
+
+    public void setPhoto_url(String photo_url) {
+        this.photo_url = photo_url;
+    }
 }

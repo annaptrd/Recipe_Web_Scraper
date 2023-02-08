@@ -3,8 +3,6 @@ package com.anna.recipes.controller;
 import com.anna.recipes.dto.CategoryDTO;
 import com.anna.recipes.exceptions.EntityNotFoundException;
 import com.anna.recipes.mapper.CategoryMapper;
-import com.anna.recipes.model.Category;
-import com.anna.recipes.model.Recipe;
 import com.anna.recipes.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,6 +30,5 @@ public class CategoryController {
     public List<CategoryDTO> getAll(){
         return mapper.toDTO(service.list());
     }
-
 
 }

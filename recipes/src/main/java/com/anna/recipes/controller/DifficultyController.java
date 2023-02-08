@@ -25,11 +25,8 @@ public class DifficultyController {
     public DifficultyDTO getByID(@PathVariable("id") int id){
         return mapper.toDTO(service.findById(id).orElseThrow(()->new EntityNotFoundException("Difficulty")));
     }
-
     @GetMapping(value="/difficulty/all")
     public List<DifficultyDTO> getAll(){
         return mapper.toDTO(service.list());
     }
-
-
 }

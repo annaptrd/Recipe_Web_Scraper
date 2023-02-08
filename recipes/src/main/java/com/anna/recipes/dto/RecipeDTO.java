@@ -18,6 +18,7 @@ public class RecipeDTO {
 
     private Integer id;
     private String uri;
+    private String photo_url;
     private String title;
     private String description;
     private String hashValue;

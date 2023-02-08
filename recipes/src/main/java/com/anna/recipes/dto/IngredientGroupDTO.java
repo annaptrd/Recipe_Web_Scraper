@@ -1,6 +1,5 @@
 package com.anna.recipes.dto;
 
-import com.anna.recipes.model.Ingredient;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,5 +14,5 @@ import java.util.List;
 public class IngredientGroupDTO {
     private Integer id;
     private String description;
-    private List<IngredientDTO> igredients;
+    private List<IngredientDTO> ingredients;
 }

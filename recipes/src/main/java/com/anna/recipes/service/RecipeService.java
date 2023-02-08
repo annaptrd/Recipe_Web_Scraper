@@ -146,4 +146,9 @@ public class RecipeService {
         return description.replaceAll("\\d", "").toLowerCase();
     }
 
+    // select * from recipe
+    //	where MATCH(title,description) against('chicken' IN NATURAL LANGUAGE MODE);
+    public List<Recipe> findSimilarById(int id) {
+        return dao.findSimilar(id);
+    }
 }
